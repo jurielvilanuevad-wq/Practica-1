@@ -1,0 +1,67 @@
+/* Este archivo tambien pertenece a la capa de presentación, especificamente se trata del diseño que llevaran cada uno de los elementos */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(75, 43, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 67px;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0);
+    width: 300px;
+}
+h1{
+    color: black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+h2{
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #333;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;    
+}
+
+input:focus{
+    border-color:teal;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #007bf0;
+    color:wheat;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: black;
+}
+
+#resultado{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #28a745;
+}
