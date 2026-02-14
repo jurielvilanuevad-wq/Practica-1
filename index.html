@@ -1,24 +1,47 @@
-<!-- Este archivo pertenece a la capa de presentación -->
+<!-- 
+Este archivo pertenece a la 1er capa: Presentación
+Su función principal es la de mostrar al usuario una interfaz gráfica interactuable.
+ -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Present for you! I'm not -->
-    <div class="container">
-        <h1 class="ejemplo">Ejemplo basico</h1>
-        <h2>Suma de numeros</h2>
-        <input type="number" id="num1" placeholder="Numero 1">
-        <input type="number" id="num2" placeholder="Numero 2">
-        <button onclick="sumar()">SUMAR</button>
-        <p id="resultado"></p>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<script src="datos.js"></script>
-    <script src="lógica.js"></script>
-</body>
+    <body>
+        <!-- 
+        Agrupación de los elementos
+        visuales de la interfaz gráfica.
+         -->
+        <div class="container">
+
+            <!-- Descripción la aplicación para el usuario-->
+            <h1 class="ejemplo">Ejemplo basico</h1>
+            <h2>Suma de numeros</h2>
+
+            <!--
+            Campos de entrada que permiten al usuario ingresar dos números
+            cualquiera. Se asigna una 'id' para su uso posterior dentro de la 
+            capa de lógica. 
+            -->
+            <input type="number" id="num1" placeholder="Numero 1">
+            <input type="number" id="num2" placeholder="Numero 2">
+            
+            <!-- 
+            Boton que, una vez cliqueado por el usuario, manda llamar a la función 'sumar()'
+            encontrada en la capa de lógica.
+            -->
+            <button onclick="sumar()">SUMAR</button>
+            
+            <!-- Se muestra el resultado al usuario una vez ejecutadas el resto de capas -->
+            <p id="resultado"></p>
+        </div>
+
+        <!-- Importa al archivo perteneciente a la capa de datos (datos.js) y la capa de lógica (lógica.js). -->
+        <script src="datos.js"></script>
+        <script src="lógica.js"></script>
+    </body>
 </html>

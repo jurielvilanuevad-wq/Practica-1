@@ -1,4 +1,14 @@
-/* Este archivo tambien pertenece a la capa de presentación, especificamente se trata del diseño que llevaran cada uno de los elementos */
+/* 
+Este archivo tambien pertenece a la capa de presentación,
+especificamente se trata del diseño que recibiran los elementos disponibles.
+Dicho de otra forma, se manejan los estilos visuales
+*/
+
+/* 
+Estilo general del cuerpo del documento. 
+Define la tipografía principal, color de fondo y 
+configuración de centrado del contenido en pantalla.
+*/
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(75, 43, 255);
@@ -9,6 +19,10 @@ body{
     margin: 0;
 }
 
+/* 
+Contenedor principal de la aplicación.
+Corresponde al div con clase "container" en index.html.
+*/
 .container{
     background-color: aliceblue;
     padding: 2rem;
@@ -16,16 +30,21 @@ body{
     box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0);
     width: 300px;
 }
+
+/*  Estilo del título principal. */
 h1{
     color: black;
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
+/* Estilo del subtítulo principal. */ 
 h2{
     color: #333;
     margin-bottom: 1.5rem;
 }
 
+/* Estilo general para los campos de entrada (inputs) */ 
 input{
     width: 100%;
     padding: 10px;
@@ -36,12 +55,17 @@ input{
     font-size: 1rem;    
 }
 
+/* 
+Estilo cuando el usuario interactúa (focus) con el input.
+Mejora la experiencia de usuario indicando que el campo está activo.
+*/
 input:focus{
     border-color:teal;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
 }
 
+/* Estilo del botón principal de acción perteneciente a la función 'sumar()'. */
 button{
     width: 100%;
     padding: 12px;
@@ -55,10 +79,15 @@ button{
     margin-top: 10px;
 }
 
+/* Efecto visual cuando el usuario pasa el mouse sobre el botón. */
 button:hover{
     background-color: black;
 }
 
+/* 
+Estilo del elemento que muestra el resultado.
+Corresponde al <p id="resultado"> en index.html.
+*/
 #resultado{
     margin-top: 20px;
     font-weight: bold;
